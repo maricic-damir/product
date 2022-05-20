@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: product-service
+  liquibase:
+    change-log: classpath:changeLog.xml
+  datasource:
+    url: jdbc:postgresql://localhost:5433/levi9
+    password: code9
+    username: levi9
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL94Dialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+server:
+  port: 8084
