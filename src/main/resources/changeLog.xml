@@ -16,12 +16,26 @@
                 <constraints nullable="false"/>
             </column>
             <column name="price" type="DECIMAL">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
             <column name="quantity" type="INTEGER">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
         </createTable>
+    </changeSet>
+
+    <changeSet author="Code9 Levi9" id="add_data_1">
+        <insert tableName="product">
+            <column name="name" value="Test_Product"/>
+            <column name="price" value="8"/>
+            <column name="quantity" value="10"/>
+        </insert>
+    </changeSet>
+
+    <changeSet author="Code9 Levi9" id="add_data_2">
+        <insert tableName="product">
+            <column name="name" value="Test_Product_2"/>
+        </insert>
     </changeSet>
 
 </databaseChangeLog>

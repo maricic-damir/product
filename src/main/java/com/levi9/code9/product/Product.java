@@ -22,9 +22,9 @@ public class Product {
     @Column
     private String name;
 
-    @Column
-    private double price;
+    @Column()
+    private Double price;
 
     @Column
-    private int quantity;
+    private Integer quantity;
 }

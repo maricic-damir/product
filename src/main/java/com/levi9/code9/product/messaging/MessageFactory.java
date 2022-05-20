@@ -1,13 +1,9 @@
 package com.levi9.code9.product.messaging;
 
 import com.levi9.code9.product.Product;
-import com.levi9.code9.users.messaging.UserUpdateMessage;
-import com.levi9.code9.users.user.User;
-import com.levi9.code9.users.user.UserOperation;
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 
-import java.time.OffsetDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
